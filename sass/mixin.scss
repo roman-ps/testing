@@ -3,3 +3,19 @@
   position: absolute;
   content: '';
 }
+
+@mixin font-h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.025em;
+}
+
+@mixin font-h3 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: -0.025em;
+  color: #03A67B;
+  text-transform: uppercase;
+}

@@ -1,13 +1,12 @@
 .wrapper {
-  width: 900px;
+  width: 1156px;
   margin: 0 auto;
+}
+
+body {
+  font-family: $fonts;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
-}
-
-ul {
-  list-style: none;
 }

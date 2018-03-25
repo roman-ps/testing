@@ -1,0 +1,108 @@
+.account {
+  padding: 26px 0 77px 0;
+}
+
+.account__title {
+  @include font-h2;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.account__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 46px;
+}
+
+.account__item {
+  width: 372px;
+  box-sizing: border-box;
+  padding: 33px 33px 33px 34px;
+  margin-right: 20px;
+  border: 1px solid #EAEAEA;
+  text-align: center;
+  
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+  
+  &--best {
+    position: relative;
+    cursor: pointer;
+    
+    &::before {
+      @include pseudo;
+      background-image: url(../img/sprite.png);
+      background-position: -10px -10px;
+      width: 40px;
+      height: 50px;
+      top: 0;
+      right: 19px;
+    }
+  }
+}
+
+.account__item--best:hover::before {
+  background-position: -10px -80px;
+}
+
+.account__item-title {
+  @include font-h3;
+  margin-bottom: 38px;
+}
+
+.account__item-name {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.account__item-type,
+.account__item-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.account__item-description {
+  margin-bottom: 85px;
+}
+
+.account__table {
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.account__table-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.account__open {
+  display: block;
+  padding: 20px 0 14px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #03A67B;
+  border: 1px solid #03A67B;
+  border-radius: 5px;
+}
+
+.account__footer {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.account__footer-link {
+  color: #03A67B;
+}

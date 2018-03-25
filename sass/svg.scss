@@ -1,0 +1,71 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-account-choice {
+    width: 40px;
+    height: 50px;
+    background-position: -10px -10px;
+}
+
+.sprite-account-choice-hover {
+    width: 40px;
+    height: 50px;
+    background-position: -10px -80px;
+}
+
+.sprite-footer-facebook {
+    width: 9px;
+    height: 17px;
+    background-position: -10px -150px;
+}
+
+.sprite-footer-facebook-hover {
+    width: 9px;
+    height: 17px;
+    background-position: -10px -187px;
+}
+
+.sprite-footer-linkedin {
+    width: 18px;
+    height: 17px;
+    background-position: -10px -224px;
+}
+
+.sprite-footer-linkedin-hover {
+    width: 18px;
+    height: 17px;
+    background-position: -10px -261px;
+}
+
+.sprite-footer-twitter {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -298px;
+}
+
+.sprite-footer-twitter-hover {
+    width: 21px;
+    height: 17px;
+    background-position: -10px -335px;
+}
+
+.sprite-footer-vk {
+    width: 25px;
+    height: 14px;
+    background-position: -10px -372px;
+}
+
+.sprite-footer-vk-hover {
+    width: 25px;
+    height: 14px;
+    background-position: -10px -406px;
+}
+
+.sprite-header-arrow {
+    width: 13px;
+    height: 13px;
+    background-position: -10px -440px;
+}

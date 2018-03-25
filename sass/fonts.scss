@@ -1,7 +1,26 @@
 @font-face {
-  font-family: "";
+  font-family: "Proxima Nova";
   font-weight: 400;
   font-style: normal;
-  url: src("../fonts/.woff2") format("woff2"),
-    src("../fonts/.woff") format("woff");
+  src: local("Proxima Nova Regular"),
+    url("../fonts/ProximaNovaRegular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 600;
+  font-style: normal;
+  src: local("Proxima Nova Semibold"),
+    url("../fonts/ProximaNovaSemibold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  font-weight: 700;
+  font-style: normal;
+  src: local("Proxima Nova Bold"),
+    url("../fonts/ProximaNovaBold.woff") format("woff");
+  font-display: swap;
 }

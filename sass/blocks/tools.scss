@@ -1,0 +1,126 @@
+.tools {
+  background-image: url("../img/tools-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1366px auto;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.tools .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tools__title {
+  @include font-h2;
+  margin-bottom: -12px;
+}
+
+.tools__subtitle {
+  width: 372px;
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tools__left {
+  padding-top: 156px;
+}
+
+.tools__right {
+  padding: 95px 0 80px 0;
+  width: 568px;
+}
+
+.tools__learnmore,
+.tools__converter-name {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #02C390;
+}
+
+.tools__converter-name {
+  margin-bottom: 26px;
+}
+
+.tools__converter {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 25px;
+  padding: 29px 27px 30px 27px;
+}
+
+.tools__converter-right,
+.tools__converter-left {
+  font-size: 0;
+}
+
+.tools__converter-name--input {
+  color: #ffffff;
+}
+
+.tools__converter-name--result {
+  text-align: right;
+}
+
+.tools__converter-action {
+  font-family: $fonts;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  background-color: transparent;
+  color: #ffffff;
+  width: 134px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.tools__converter-select {
+  font-family: $fonts;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px 10px 3px 10px;
+}
+
+.tools__table {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 28px 20px 12px 27px;
+}
+
+.tools__col:nth-child(3) {
+  text-align: right;
+}
+
+.tools__col-title {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.tools__col-item {
+  font-size: 16px;
+//  line-height: 32px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.tools__col span {
+  vertical-align: super;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 32px;
+}

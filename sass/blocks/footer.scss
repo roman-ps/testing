@@ -1,6 +1,6 @@
 .footer {
   background-color: #000000;
-  padding: 50px 0 100px;
+  padding: 87px 0 108px;
 }
 
 .footer .wrapper {
@@ -20,6 +20,7 @@
 }
 
 .footer__item-title {
+  margin-bottom: 23px;
   font-size: 14px;
   font-weight: 600;
   line-height: 16px;
@@ -35,6 +36,7 @@
 }
 
 .footer__item-phone {
+  margin-bottom: -11px;
   font-size: 18px;
   font-weight: 600;
   line-height: 35px;
@@ -42,6 +44,8 @@
 }
 
 .footer__item-mail {
+  display: inline-block;
+  margin-bottom: 9px;
   font-size: 16px;
   line-height: 35px;
   color: #ffffff;

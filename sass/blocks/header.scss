@@ -199,10 +199,35 @@
 .header__item {
   width: 274px;
   margin-right: 20px;
+  position: relative;
   
   &:nth-child(4n) {
     margin-right: 0;
   }
+  
+  &::before {
+    @include pseudo;
+    width: 40px;
+    height: 40px;
+    top: -66px;
+    left: 0;
+  }
+}
+
+.header__item:nth-child(1)::before {
+  content: url("../img/header-icon.png");
+}
+
+.header__item:nth-child(2)::before {
+  content: url("../img/header-search.png");
+}
+
+.header__item:nth-child(3)::before {
+  content: url("../img/header-quality.png");
+}
+
+.header__item:nth-child(4)::before {
+  content: url("../img/header-comission.png");
 }
 
 .header__item-title {

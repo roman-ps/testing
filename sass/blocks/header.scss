@@ -6,6 +6,10 @@
   background-color: #000000;
   padding: 50px 0 78px;
   color: #ffffff;
+  
+  @media #{$retina} {
+    background-image: url("../img/header-bg@2x.jpg");
+  }
 }
 
 .header__top {
@@ -16,8 +20,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   min-height: 100px;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
 }

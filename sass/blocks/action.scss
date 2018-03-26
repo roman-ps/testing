@@ -6,6 +6,10 @@
   background-color: #000000;
   color: #ffffff;
   padding-bottom: 58px;
+  
+  @media #{$retina} {
+    background-image: url("../img/action-bg@2x.jpg");
+  }
 }
 
 .action .wrapper {

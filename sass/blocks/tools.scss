@@ -5,6 +5,10 @@
   background-size: 1366px auto;
   background-color: #000000;
   color: #ffffff;
+  
+  @media #{$retina} {
+    background-image: url("../img/tools-bg@2x.jpg");
+  }
 }
 
 .tools .wrapper {
@@ -49,16 +53,44 @@
 }
 
 .tools__converter {
+  position: relative;
   display: flex;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.1);
   margin-bottom: 25px;
   padding: 29px 27px 30px 27px;
+  
+  &::before,
+  &::after {
+    @include pseudo;
+    width: 15px;
+    height: 3px;
+    background-color: #ffffff;
+    left: 274px;
+  }
+  
+  &::before {
+    top: 85px;
+  }
+  
+  &::after {
+    top: 94px;
+  }
 }
 
 .tools__converter-right,
 .tools__converter-left {
+  position: relative;
   font-size: 0;
+  
+  &::after {
+    @include pseudo;
+    width: 13px;
+    height: 13px;
+    background-image: url("../img/tools-arrow.png");
+    bottom: 19px;
+    right: 17px;
+  }
 }
 
 .tools__converter-name--input {
@@ -70,6 +102,7 @@
 }
 
 .tools__converter-action {
+  position: relative;
   width: 134px;
   padding: 7px 0 9px;
   font-family: $fonts;
@@ -85,12 +118,22 @@
 
 .tools__converter-select {
   font-family: $fonts;
+  appearance: none;
   font-size: 16px;
   font-weight: 600;
   line-height: 21px;
   text-transform: uppercase;
   border: none;
-  padding: 14px 19px 11px 15px;
+  padding: 15px 38px 11px 18px;
+  
+  &::after {
+    @include pseudo;
+    width: 13px;
+    height: 13px;
+    background-image: url("../img/tools-arrow.png");
+    top: 0;
+    right: 0px;
+  }
 }
 
 .tools__converter-right .tools__converter-select {

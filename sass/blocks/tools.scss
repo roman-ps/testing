@@ -2,7 +2,7 @@
   background-image: url("../img/tools-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1366px auto;
+  background-size: cover;
   background-color: #000000;
   color: #ffffff;
   
@@ -60,21 +60,15 @@
   margin-bottom: 25px;
   padding: 29px 27px 30px 27px;
   
-  &::before,
   &::after {
     @include pseudo;
     width: 15px;
-    height: 3px;
-    background-color: #ffffff;
+    height: 6px;
+    background-color: transparent;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     left: 274px;
-  }
-  
-  &::before {
     top: 85px;
-  }
-  
-  &::after {
-    top: 94px;
   }
 }
 
@@ -113,6 +107,7 @@
   background-color: transparent;
   color: #ffffff;
   border: 1px solid #ffffff;
+  border-radius: none;
   cursor: pointer;
 }
 
